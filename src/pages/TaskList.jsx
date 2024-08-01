@@ -57,7 +57,7 @@ const TaskList = () => {
               (
                 <Stack direction={"column"} sx={{ textAlign: "center" }}>
                   <div>
-                    <span>Aun no se han agregado tareas</span>
+                    <span>Aun no se han agregado tareas.</span>
                   </div>
                 </Stack>
               )

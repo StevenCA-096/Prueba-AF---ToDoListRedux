@@ -12,7 +12,10 @@ const CreateTask = () => {
   const navigate = useNavigate()
 
   const handleInputChange = (e) => {
-
+    if (e.target.value.length >= 20) {
+      SetError("No mas de 20 caracteres")
+      return setText(text.slice(0,20))
+    }
     setText(e.target.value);
   };
 
@@ -23,7 +26,7 @@ const CreateTask = () => {
       SetError(false)
       navigate('/')
     } else {
-      SetError(true)
+      SetError("Complete este espacio")
     }
   };
 
